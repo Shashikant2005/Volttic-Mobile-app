@@ -1,6 +1,5 @@
 import { View, Text, Touchable, TouchableOpacity } from 'react-native'
 import React from 'react'
-
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import {useEffect} from 'react';
@@ -29,14 +28,22 @@ const index = () => {
       if (!loaded && !error) {
         return null;
       }
+
+   
+  if (user) {
+    // Redirect to a tab-based layout if the user is signed in
+    return <Redirect href="/tabs" />;
+  }
+
+
   return (
    
  <View>
       <SignedIn>
-          <Redirect href={'/home'} />
+         {/* <Text>shashikant</Text> */}
       </SignedIn>
       <SignedOut>
-          <LoginScreen />
+          <LoginScreen/>
       </SignedOut>
   </View>
 
