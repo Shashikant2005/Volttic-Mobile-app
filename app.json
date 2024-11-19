@@ -36,7 +36,13 @@
       ["expo-font",
         {
           "fonts": ["./assets/fonts/Outfit-Bold.ttf"]
-        }]
+        }],
+        [
+          "expo-location",
+          {
+            "locationAlwaysAndWhenInUsePermission": "Allow EV Station App to use your location."
+          }
+        ]
     ],
     "experiments": {
       "typedRoutes": true

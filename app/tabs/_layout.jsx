@@ -1,10 +1,18 @@
+import { UserLocationContext } from '@/Apps/Screens/LoginScreen/Context/UserLocation';
 import { Tabs } from 'expo-router';
+import { useContext, useEffect, useState } from 'react';
+import { Text } from 'react-native';
 import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
 const Layout = () => {
+
+ 
   return (
+
+   
     <Tabs>
       {/* Home Tab */}
+     
       <Tabs.Screen
         name="home"
         options={{
@@ -52,6 +60,7 @@ const Layout = () => {
         }}
       />
     </Tabs>
+
   );
 };
 

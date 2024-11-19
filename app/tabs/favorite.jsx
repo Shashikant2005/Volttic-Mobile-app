@@ -1,7 +1,10 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserLocationContext } from '@/Apps/Screens/LoginScreen/Context/UserLocation'
 
 const favorite = () => {
+
+  //const {location,setLocation} = useContext(UserLocationContext)
   return (
     <View>
       <Text>favorite</Text>
